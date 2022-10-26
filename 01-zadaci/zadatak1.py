@@ -4,7 +4,7 @@
 lista1 = ['Pas', 'Macka', 'Stol']
 
 def provjera(x):
-    assert all(isinstance(i, str) for i in x)
+   if isinstance(x, list):
     return [i for i in x if len(i) > 4]
 
 print(provjera(lista1))
